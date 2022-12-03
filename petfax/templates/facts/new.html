@@ -10,12 +10,14 @@
 </head>
 <body>
     <h1>Add a fact</h1>
-    <form>
-        <label for="fact" name="fact">
-            <input type="text" id="fact" placeholder="Your fact here...">
-            <input type="submit">
-            <a href="/pets">home</a>
-        </label>
+    <form action="/facts" method="POST">
+        <label for="submitter" >Name</label>
+        <input type="text" name="submitter" placeholder="enter your name">
+        <label for="fact">Fact</label>
+        <textarea name="fact"></textarea>
+        <input type="submit" value="Submit the fact">
+        <a href="/pets">home</a>
+        
     </form>
 </body>
 </html>
